@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+
+      <!--  CSS -->
+      <link rel="stylesheet" type="text/css" href=static\css\myapp.css>
+
+ <title>
+          {% block title %}
+
+          {% endblock %}
+      </title>
+   </head>
+<body>
+    <p style="text-align:center;"><img src="https://wallpaperaccess.com/full/3561135.jpg" alt="stock-market" height="320" width="450"></p>
+           <div class="navbar">
+
+
+
+
+            <a  href="{{url_for('home')}}"><button style="display:block; margin: 0 auto; height: 30px; width: 400px; left: 250; top: 250; font-size:20px">Home</button></a>
+            <a  href="{{url_for('stocks_page')}}"><button style="display:block; margin: 0 auto; height: 30px; width: 400px; left: 250; top: 250; font-size:20px">Stocks</button></a>
+
+
+
+         </div>
+
+         {% block content %}
+
+         {% endblock %}
+
+         </body>
+         </html>
